@@ -1,0 +1,183 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  margin-top: 5rem;
+}
+h1,
+h2,
+h3 {
+  margin-bottom: 10px;
+}
+h1 {
+  font-size: 6vw;
+  margin: 0;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.5vw;
+  color: #333;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 2vw;
+  color: #555;
+  margin-top: 0;
+}
+p {
+  margin: 5px 0;
+  font-size: 1.2vw;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: start;
+}
+.section {
+  margin-bottom: 20px;
+  padding: 10px;
+  grid-column: span 2;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+#header div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.first-name {
+  color: #555;
+}
+
+.contact-info {
+  margin-bottom: 15px;
+}
+.contact-info a {
+  color: #0073e6;
+  text-decoration: none;
+}
+.contact-info a:hover {
+  text-decoration: underline;
+}
+.skills-list {
+  padding: 0;
+}
+.skills-list li {
+  margin-bottom: 5px;
+}
+
+.divider {
+  grid-column: span 2;
+}
+
+#experience {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+#experience div {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0;
+}
+
+#skills {
+  grid-column-start: 2;
+  grid-row-start: 4;
+  margin: 0;
+  padding-left: 3rem;
+}
+
+#skills ul {
+  padding-left: 20px;
+}
+
+#addSkills {
+  grid-column-start: 2;
+  grid-row-start: 5;
+  padding-left: 3rem;
+}
+
+#education p {
+  margin-bottom: 2rem;
+}
+
+.details {
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .content {
+    padding: 30px;
+  }
+
+  #experience {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  #skills {
+    grid: span 2;
+    grid-column-start: 1;
+    grid-row-start: 5;
+    padding: 0;
+  }
+
+  #addSkills {
+    padding: 0;
+    padding-left: 20px;
+    justify-self: start;
+    align-self: flex-start;
+    grid-row-start: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 10vw;
+  }
+  h2 {
+    font-size: 6vw;
+  }
+  h3 {
+    font-size: 4vw;
+  }
+
+  p, li {
+    font-size: 2.5vw;
+  }
+
+  #header {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #header div {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  #skills,
+  #addSkills {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    padding: 0;
+  }
+}
