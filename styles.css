@@ -26,7 +26,7 @@ h3 {
   color: #555;
   margin-top: 0;
 }
-p {
+p, li{
   margin: 5px 0;
   font-size: 1.2vw;
 }
@@ -72,12 +72,6 @@ p {
 .contact-info a:hover {
   text-decoration: underline;
 }
-.skills-list {
-  padding: 0;
-}
-.skills-list li {
-  margin-bottom: 5px;
-}
 
 .divider {
   grid-column: span 2;
@@ -98,17 +92,21 @@ p {
   grid-column-start: 2;
   grid-row-start: 4;
   margin: 0;
-  padding-left: 3rem;
+  padding-left: 30px;
 }
 
-#skills ul {
-  padding-left: 20px;
+.skills-list {
+  padding: 0 25px;
+}
+
+.skills-list li {
+  margin-bottom: 5px;
 }
 
 #addSkills {
   grid-column-start: 2;
   grid-row-start: 5;
-  padding-left: 3rem;
+  padding-left: 30px;
 }
 
 #education p {
@@ -133,11 +131,10 @@ p {
     grid: span 2;
     grid-column-start: 1;
     grid-row-start: 5;
-    padding: 0;
+    padding: 10px;
   }
 
   #addSkills {
-    padding: 0;
     padding-left: 20px;
     justify-self: start;
     align-self: flex-start;
@@ -178,6 +175,6 @@ p {
   #addSkills {
     grid-column-start: 1;
     grid-column-end: -1;
-    padding: 0;
+    padding: 10px;
   }
 }
